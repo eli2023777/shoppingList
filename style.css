@@ -143,9 +143,9 @@ h1 {
 
     h1 {
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 2rem;
         height: 40px;
-        z-index: 2;
+        z-index: 2.2;
     }
 
 
@@ -155,6 +155,7 @@ h1 {
     }
 
     .ulDiv {
-        width: 400px;
+        width: 330px;
     }
+
 }

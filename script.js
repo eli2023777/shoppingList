@@ -18,9 +18,9 @@ addBtn.addEventListener('click', () => {
 
     checkbox.addEventListener('change', () => {
         if (checkbox.checked === true) {
-            li.style.textDecoration = 'line-through';
+            textSpan.style.textDecoration = 'line-through';
         } else {
-            li.style.textDecoration = 'none';
+            textSpan.style.textDecoration = 'none';
         }
     });
 

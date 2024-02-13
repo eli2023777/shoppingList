@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 650px;
+    height: 100%;
+    margin: 50px auto;
+    direction: rtl;
+    display: flex;
+    border: #7673736c 3px solid;
+    border-radius: 10px;
+}
+
+.imgBG {
+    width: 640px;
+    height: 600px;
+    opacity: 0.2;
+    background: scroll center center/cover no-repeat url('./shopping.jpg');
+    position: absolute;
+}
+
+.content {
+    z-index: 2;
+    margin: 30px auto;
+    width: 50%;
+}
+
+h1 {
+    height: 60px;
+    text-align: center;
+    font-size: 3.1rem;
+    border-radius: 5px;
+}
+
+.formBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#LIinput {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+
+#addBtn {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#addBtn:hover {
+    background-color: #3d8105;
+}
+
+
+.ulDiv {
+    width: 500px;
+    height: 390px;
+    overflow-y: auto;
+    border: 1px solid #fbfbfb9f;
+    background-color: #f0f0f092;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #989494;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    width: 27px;
+    height: 27px;
+}
+
+.btnsSpan {
+    align-items: center;
+    margin-top: auto;
+    padding: 2px;
+}
+
+.editBtn {
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: rgb(132, 249, 147);
+}
+
+.editBtn:hover {
+    width: 62px;
+    height: 27px;
+}
+
+.deleteBtn {
+    background-color: rgb(252, 68, 68);
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    width: 62px;
+    height: 27px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        height: 40px;
+    }
+
+
+    .imgBG {
+        width: 88%;
+    }
+
+    .ulDiv {
+        width: 400px;
+    }
+}

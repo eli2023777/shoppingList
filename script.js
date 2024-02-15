@@ -5,6 +5,39 @@ const ul = document.createElement('ul');
 ulDiv.appendChild(ul);
 
 
+
+// function resetEventListeners() {
+//     ulDiv.querySelectorAll('.editBtn').forEach(editBtn => {
+//         editBtn.addEventListener('click', () => {
+//             const textSpan = editBtn.parentElement.previousElementSibling;
+//             textSpan.innerHTML = prompt('Edit your item:', textSpan.textContent);
+//             saveToLocalStorage();
+//             removeEventListeners('click', editBtn);
+//         });
+//     });
+
+//     ulDiv.querySelectorAll('.deleteBtn').forEach(deleteBtn => {
+//         deleteBtn.addEventListener('click', () => {
+//             ul.removeChild(deleteBtn.parentElement.parentElement);
+//             saveToLocalStorage();
+//         });
+//     });
+
+//     ulDiv.querySelectorAll('.checkbox').forEach(checkbox => {
+//         checkbox.addEventListener('change', () => {
+//             const textSpan = checkbox.nextElementSibling;
+//             if (checkbox.checked) {
+//                 textSpan.style.textDecoration = 'line-through';
+//             } else {
+//                 textSpan.style.textDecoration = 'none';
+//             }
+//             saveToLocalStorage();
+//         });
+//     });
+// }
+
+
+
 // Add event listener add button
 addBtn.addEventListener('click', () => {
 
@@ -70,59 +103,11 @@ addBtn.addEventListener('click', () => {
         ul.removeChild(li);
     });
 
+    // liArr.push(li);
+
     // Save to local storages
-    saveToLocalStorage(textSpan);
+    // saveToLocalStorage(liArr);
 });
 
-// function saveToLocalStorage(textSpan) {
-//     localStorage.setItem('span', textSpan.innerHTML);
-
-// }
-
-// function getItems(textSpan) {
-//     const saved = localStorage.getItem('span');
-//     textSpan.innerHTML = saved;
-// }
-
-// getItems();
-
-
-
-// function resetEventListeners() {
-//     ulDiv.querySelectorAll('.editBtn').forEach(editBtn => {
-//         editBtn.addEventListener('click', () => {
-//             const textSpan = editBtn.parentElement.previousElementSibling;
-//             textSpan.innerHTML = prompt('Edit your item:', textSpan.textContent);
-//             saveToLocalStorage();
-//         });
-//     });
-
-//     ulDiv.querySelectorAll('.deleteBtn').forEach(deleteBtn => {
-//         deleteBtn.addEventListener('click', () => {
-//             const li = deleteBtn.parentElement.parentElement;
-//             ul.removeChild(li);
-//             saveToLocalStorage();
-//         });
-//     });
-
-//     ulDiv.querySelectorAll('.checkbox').forEach(checkbox => {
-//         checkbox.addEventListener('change', () => {
-//             const li = checkbox.parentElement;
-//             const textSpan = li.querySelector('.textSpan');
-//             if (checkbox.checked) {
-//                 textSpan.style.textDecoration = 'line-through';
-//             } else {
-//                 textSpan.style.textDecoration = 'none';
-//             }
-//             saveToLocalStorage();
-//         });
-//     });
-// }
-
-
-// function saveToLocalStorage() {
-
-// reset event listeners of the buttons
-// resetEventListeners();
 
 
